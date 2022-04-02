@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.alzohar.relationship.webservice.entity.House;
 import com.alzohar.relationship.webservice.exception.OrderNotFound;
 import com.alzohar.relationship.webservice.repositrory.HouseRepository;
 
 @RestController
+@RequestMapping("/api")
 public class HouseController {
 
 	@Autowired
